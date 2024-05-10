@@ -1,0 +1,197 @@
+.heroContainer {
+    min-height: 100vh;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .heroContainer img {
+    width: 50%;
+    height: 100%;
+    object-fit: contain;
+  
+  }
+  
+  .heroText {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  
+  }
+  
+  .heroText h1 {
+    text-align: center;
+  }
+  
+  .heroText h1 span {
+    display: block;
+    font-size: .75em;
+    letter-spacing: .15em;
+    margin-left: 0.075em;
+    margin-right: -0.075em;
+    padding-bottom: 0.25em;
+    background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%231f2e3b' viewBox='0 0 145 8'%3E%3Cpath d='M141 8H4C1.8 8 0 6.2 0 4s1.8-4 4-4h137c2.2 0 4 1.8 4 4s-1.8 4-4 4z'/%3E%3C/svg%3E") no-repeat bottom;
+    background-size: 1.75em;
+    text-align: center;
+  }
+  
+  .heroText p {
+    font-size: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .heroBtn {
+    cursor: pointer;
+    background-color: #009ddc;
+    color: #fff;
+    line-height: 1.25;
+    text-align: center;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    border: 3px solid #fff;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 1rem 4rem;
+  }
+  ul.checklist {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  ul.checklist li {
+    font-weight: 500;
+    line-height: 40px;
+    text-align: left;
+    background: url(../assets/images/check-blue.svg) no-repeat 0;
+    background-size: 20px 20px;
+    padding-left: 25px;
+    font-size: 16px;
+    background-size: 20px 20px;
+  }
+  
+  ul.checklist li span {
+    font-weight: 400;
+    font-size: 14px;
+  }
+  
+  @media (max-width: 1440px) {
+    .heroText h1 {
+      margin-bottom: 2rem;
+      margin-left: 0em;
+      margin-right: 0em;
+      font-size: 6rem;
+  }
+  .heroText h1 span {
+    margin-left: 0.075em;
+    margin-right: 0;
+    padding-bottom: 12px;
+  }
+  .heroText p {
+    margin-bottom: 2rem;
+  }
+  .heroBtn {
+    margin-bottom: 2rem;
+  }
+  }
+  @media (max-width: 1025px) {
+    .heroText h1 {
+      margin-bottom: 1rem; 
+      margin-left: 0em;
+      margin-right: 0em;
+      font-size: 5rem;
+  }
+  .heroText h1 span {
+    margin-left: 0.075em;
+    margin-right: -0.075em;
+    padding-bottom: 0em;
+  }
+  .heroText p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  }
+  
+  @media (max-width: 769px) {
+    .heroContainer {
+      min-height: 100%;
+      padding: 0;
+      justify-content: space-around;
+      gap: 20px;
+      flex-direction: column;
+  }
+  .heroContainer img {
+    width: 100%;
+    height: 50%;
+  }
+    .heroText {
+      width: 100%;
+      text-align: center;
+    }
+    .heroText h1 {
+      margin-bottom: 0;
+      margin-left: 0;
+      margin-right: 0;
+      font-size: 3.5rem;
+    }
+    .heroText p {
+      font-size: 1rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+  }
+  .checklistContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  }
+  
+  @media (max-width: 426px) {
+  
+  .heroText h1 {
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .heroText h1 span {
+  padding-bottom: 0.5em;
+  margin-left: 0;
+  margin-right: 0;
+  font-size: 3rem;
+  }
+  .heroBtn {
+    margin-bottom: 1.2rem;
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+  }
+  
+  @media (max-width: 376px) {
+  .heroBtn {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  .heroText h1 span {
+    font-size: 2.5rem;
+    }
+  }
+  
+  @media (max-width: 320px) {
+  
+  .heroText p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  }
+  

@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*Basic styling*/
+body {
+  margin: 0;
+  font-family: Roboto,sans-serif;
+  color: #444;
+  background-color: #fff;
+}
+
+
+main {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+
+h1 {
+  font-size: 5.75rem;
+  margin-bottom: 2rem;
+  margin-left: 0.04em;
+  margin-right: -0.04em;
+  letter-spacing: .08em;
+  line-height: .9em;
+  font-weight: 500;
+}
+
+section {
+  text-align: center;
+  margin-bottom: 2rem;
+      /* min-height: 100vh;*/
+}
+section p {
+  max-width: 45rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+/*subtitle*/
+.title {
+  letter-spacing: 0;
+  font-family: dita, sans-serif;
+  font-weight: 500;
+  color: #1f2e3b;
+  line-height: 1.1;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 0.5em;
+  background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%231f2e3b' viewBox='0 0 145 8'%3E%3Cpath d='M141 8H4C1.8 8 0 6.2 0 4s1.8-4 4-4h137c2.2 0 4 1.8 4 4s-1.8 4-4 4z'/%3E%3C/svg%3E") no-repeat bottom;
+  background-size: 2em;
+
+}

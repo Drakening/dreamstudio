@@ -1,0 +1,134 @@
+.cta {
+    width: 100%;
+    height: 330px;
+    background: url(../assets/images/bg_news_pc.jpg);
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 4rem;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.ctaInner {
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+}
+
+.ctaInnerHeading {
+    color: #000;
+    max-width: 380px;
+    text-align: center;
+    align-self: center;
+    margin-top: 0;
+    margin-bottom: 32px;
+    margin-right: 0;
+    font-family: Rza Light, sans-serif;
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 110%;
+}
+
+.btnWrapper {
+    margin-right: 0;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+}
+
+.ctaBtn {
+    background-color: #292828;
+    color: #fff;
+    text-align: center;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-style: none;
+    border-radius: 8px;
+    flex: none;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 30px 16px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    text-decoration: none;
+    transition: none;
+    display: block;
+    position: static;
+    overflow: hidden;
+}
+
+.btnText {
+    z-index: 2;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    align-items: center;
+    padding-top: 2px;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1em;
+    display: flex;
+    position: relative;
+}
+
+@media (max-width: 769px) {
+  .cta {
+    height: 250px;
+    margin-bottom: 2rem;
+}
+.ctaInner {
+  padding-left: 0;
+  padding-right: 0;
+}
+.ctaInnerHeading {
+  font-size: 40px;
+}
+.ctaBtn {
+  font-size: 12px;
+}
+}
+
+@media (max-width: 426px) {
+
+  .cta {
+    height: 220px;
+}
+.ctaInnerHeading {
+  font-size: 32px;
+}
+.ctaBtn {
+  padding: 16px 24px 12px;
+}
+}
+
+@media (max-width: 376px) {
+  .cta {
+    height: 200px;
+}
+.ctaInnerHeading {
+  font-size: 32px;
+}
+.ctaBtn {
+  padding: 12px 20px 8px;
+}
+}
+
+@media (max-width: 320px) {
+  .ctaInnerHeading {
+    margin-bottom: 16px;
+  }
+  
+}

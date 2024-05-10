@@ -1,0 +1,35 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: #141414;
+  }
+
+  footer p {
+    font-size: 16px;
+    margin: 0;
+  }
+
+  
+  footer .copyright {
+    text-align: center;
+    color: #fff;
+    margin: 16px;
+    width: 100%;
+  }
+  @media (max-width: 780px) {
+    footer {
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+    }
+    footer .copyright {
+      width: auto;
+    }
+  }
+  @media (max-width: 426px) {
+    footer {
+      justify-content: space-around;
+      border-top: 1px solid rgb(160, 160, 160);
+      padding-top: 2rem;
+  }
+  }

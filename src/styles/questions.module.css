@@ -1,0 +1,90 @@
+.frequentlyAsked {
+  padding: 0 1rem;
+  margin-bottom: 0;
+}
+
+.accContainer {
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .accBtn {
+      width: 100%;
+      padding: 1.6rem 0;
+      font-size: 1.6rem;
+      cursor: pointer;
+      background: inherit;
+      border: none;
+      outline: none;
+      text-align: left;
+      transition: all 0.5s linear;
+  }
+  
+  .accBtn:after {
+      content: "\27A4";
+      color: #009ddc;
+      float: right;
+      transition: all 0.3s linear;
+  }
+  
+  .accBtn.isOpen:after {
+      transform: rotate(90deg);
+  }
+  
+  .accContent {
+      width: 80%;
+      max-height: 0;
+      color: rgba(0, 0, 0, 0.75);
+      font-size: 1.5rem;
+      overflow: hidden;
+      transition: max-height 0.3s ease-in-out;
+      border-bottom: 1px solid #ccc;
+  }
+  .accContent p {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+    width: 100%;
+  }
+  
+  @media (max-width: 1026px) {
+    .accBtn {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 769px) {
+    .accBtn {
+      font-size: 1.2rem;
+  }
+  .accBtn {
+      width: 90%;
+    }
+    .accContent {
+      width: 90%;
+    }
+    .accContent p {
+      font-size: 1rem;
+  }
+  }
+  
+  @media (max-width: 426px) {
+    .accBtn {
+      width: 100%;
+    }
+    .accContent {
+      width: 100%;
+    }
+    .accContainer {
+      padding: 1rem 0rem;
+    }
+  }
+  @media (max-width: 320px) {
+    .accBtn {
+      font-size: 1.1rem;
+  }
+  }
+  

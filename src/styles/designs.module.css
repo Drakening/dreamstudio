@@ -1,0 +1,163 @@
+.title {
+    letter-spacing: 0;
+    font-family: dita, -apple-system, sans-serif;
+    font-weight: 500;
+    color: #1f2e3b;
+    line-height: 1.1;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 0.5em;
+
+    background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%231f2e3b' viewBox='0 0 145 8'%3E%3Cpath d='M141 8H4C1.8 8 0 6.2 0 4s1.8-4 4-4h137c2.2 0 4 1.8 4 4s-1.8 4-4 4z'/%3E%3C/svg%3E") no-repeat bottom;
+    background-size: 2em;
+
+}
+
+.ourPicks {
+    padding: 0 1rem;
+}
+
+.picksGrid {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin-left: 0;
+    margin-right: 0;
+    justify-content: space-between;
+}
+
+
+.grid {
+    display: inline-block;
+    max-width: 55vw;
+    margin: 10px 8px 28px;
+    box-shadow: 0 8px 24px 0 rgba(0,0,0,.12);
+    min-width: 250px;
+}
+
+.grid:hover {
+  cursor: pointer;
+}
+.grid a {
+    position: relative;
+    display: block;
+    color: #000;
+    background: #f5f5f5;
+}
+.gridImg {
+    object-fit: cover;
+    max-height: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.gridImg img {
+    margin-top: 1rem;
+    height: 330px;
+}
+
+/* Add this CSS to your existing styles */
+.eyeIcon {
+  position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.5);
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.gridInfo {
+    text-align: left;
+    background-color: #fff;
+    padding: 0.75rem 0.75rem 1.25rem;
+    line-height: 1.2;
+}
+
+.gridInfo .name {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.gridInfo .info {
+    font-size: 16px;
+    line-height: 1.2;
+    color: #666;
+}
+
+/* Add this CSS to your existing styles or create a new CSS file */
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .modalContent {
+    position: relative;
+    background-color: #fff;
+    max-width: 90%;
+    max-height: 90%;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modalImage {
+    max-width: none;
+    max-height: 100vh;
+    display: block;
+    margin: auto;
+    cursor: pointer; /* Add this line to change cursor to pointer */
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bolder;
+    color: #fff;
+    background-color: #000;
+    padding: 4px;
+    border-radius: 4px;
+  }
+  
+
+@media (max-width: 1025px) {
+  .picksGrid {
+    justify-content: space-around;
+}
+.grid {
+  min-width: 350px;
+}
+}
+
+@media (max-width: 769px) {
+  .grid {
+    min-width: 250px;
+    margin: 10px 8px 32px;
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,.12);
+}
+
+}
