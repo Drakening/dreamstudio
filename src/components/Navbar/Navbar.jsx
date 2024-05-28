@@ -40,12 +40,15 @@ const Navbar = () => {
                 Pricing
               </Link>
             </li>
-            <li>
-              <Link to="contact" smooth={true} duration={500}>
-                Contact
-              </Link>
-            </li>
+            <Link className="ContactLink" to="contact" smooth={true} duration={500}>
+              Contact
+          </Link>
           </ul>
+        </div>
+        <div className="ContactBtn">
+          <Link to="contact" smooth={true} duration={500}>
+              Contact
+          </Link>
         </div>
       </div>
     </nav>

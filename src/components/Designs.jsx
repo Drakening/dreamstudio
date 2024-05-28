@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ScrollAnimation from './ui/ScrollAnimation'
 import { FaEye } from 'react-icons/fa';
 import styles from '../styles/designs.module.css';
 import Design1 from '../assets/images/1.webp';
@@ -78,11 +79,14 @@ const Designs = () => {
   return (
     <section className={styles.ourPicks}>
       <div className={styles.subheading}>
+      <ScrollAnimation>
         <h2 className={styles.title}>Recent Designs</h2>
         <p>Discover our latest sold apparel.</p>
+        </ScrollAnimation>
       </div>
 
       <div className={styles.picksGrid}>
+      <ScrollAnimation>
         {designsData.map((design) => (
           <div key={design.id} className={styles.grid} onClick={() => openModal(design.image)}>
             <div className={styles.gridImg}>
@@ -97,6 +101,7 @@ const Designs = () => {
             </div>
           </div>
         ))}
+      </ScrollAnimation>
       </div>
 
       {modalOpen && (

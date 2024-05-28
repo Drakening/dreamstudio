@@ -1,12 +1,10 @@
 .navbar {
-  height: 60px;
-    background: rgba(245, 245, 245, 0.8);
-    width: 98%;
+  height: 80px;
+    background: rgb(255, 255, 255);
+    width: 100%;
     position: sticky;
     top: 0;
     z-index: 100;
-    border-radius: 5rem;
-    margin: 15px auto 0;
 }
 .container {
   
@@ -51,7 +49,12 @@
 }
 
 .nav-elements ul li:not(:last-child) {
-  margin-right: 10px;
+  /* margin-right: 10px; */
+  /* text-align: center; */
+  display: flex;
+  /* margin: 0 auto; */
+  /* align-items: center; */
+  /* justify-content: end; */
 }
 
 .nav-elements ul a {
@@ -59,7 +62,6 @@
   font-weight: 400;
   color: #2f234f;
   text-decoration: none;
-  margin-right: 40px;
     font-size: 1.125rem;
     color: #04091e;
     font-weight: 600;
@@ -67,6 +69,7 @@
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     position: relative;
+    width: 150px;
 }
 
 .nav-elements ul a::after {
@@ -90,25 +93,52 @@
   -webkit-transform: perspective(5px) rotateX(5deg);
           transform: perspective(5px) rotateX(5deg);
 }
+
+.ContactLink {
+  display: none;
+}
+
+.ContactBtn {
+  background-color: #292828;
+  color: #fff;
+  text-align: center;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-style: none;
+  border-radius: 18px;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 25px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
 .navbar__link.reveal {
   display: none;
 }
 
 
-@media (max-width: 768px) {
-  .nav-elements ul li:not(:last-child) {
-    margin-right: 10px;
-  }
+@media (max-width: 840px) {
   .navbar {
     border-radius: 0%;
       margin-top: 0px;
   }
+  .nav-elements ul a {
+      width: 100px;
+  }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .menu-icon {
     display: block;
     cursor: pointer;
+  }
+  .ContactLink {
+    display: block;
+  }
+  .ContactBtn {
+    display: none;
   }
   .nav-elements ul li:not(:last-child) {
     margin-right: 0;

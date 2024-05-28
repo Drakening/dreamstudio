@@ -1,4 +1,5 @@
 import React from 'react';
+import ScrollAnimation from './ui/ScrollAnimation'
 import styles from '../styles/testimonials.module.css';
 import Jeff from '../assets/images/jeffery-erhunse-vp9mRauo68c-unsplash.jpg';
 import Prince from '../assets/images/prince-akachi-LWkFHEGpleE-unsplash.jpg';
@@ -29,8 +30,10 @@ const Testimonials = () => {
   return (
     <section className={styles.testimonials}>
       <div className={styles.subheading}>
+      <ScrollAnimation>
         <h2 className='title'>Testimonials</h2>
         <p>Words from the Wise.</p>
+        </ScrollAnimation>
       </div>
       <div className={styles.testimonialsWrapper}>
         {testimonialsData.map((testimonial, index) => (

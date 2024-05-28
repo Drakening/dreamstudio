@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styles from '../styles/questions.module.css';
+import ScrollAnimation from './ui/ScrollAnimation'
 
 const Questions = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -10,9 +11,10 @@ const Questions = () => {
 
   return (
     <section className={`card ${styles.frequentlyAsked}`}>
+    <ScrollAnimation>
       <h2 className='title'>Frequently asked questions</h2>
       <p>Answers Await: Your FAQs Answered Here.</p>
-
+    </ScrollAnimation>
       <div className={styles.accContainer}>
         {faqData.map((faq, index) => (
           <div key={index}>

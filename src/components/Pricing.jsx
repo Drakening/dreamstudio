@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from '../styles/pricing.module.css';
+import ScrollAnimation from './ui/ScrollAnimation'
 
 const Pricing = () => {
   const scrollToContact = () => {
@@ -37,8 +38,10 @@ const Pricing = () => {
   return (
     <section className={styles.priceList}>
       <div className={styles.subheading}>
+      <ScrollAnimation>
         <h2 className='title'>Pricing</h2>
         <p>Unbeatable Deals: Explore Our Low Prices.</p>
+        </ScrollAnimation>
       </div>
       <div className={styles.pricesContainer}>
         {priceItems.map((item, index) => (
