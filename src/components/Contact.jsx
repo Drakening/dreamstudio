@@ -1,28 +1,51 @@
 import React from 'react';
-import styles from '../styles/contact.module.css';
-import { FaHandPointDown } from 'react-icons/fa'; // Import the hand-point-down icon from react-icons
+import { FaBuilding, FaMobileAlt, FaRegEnvelope } from 'react-icons/fa';
+import styles from './ContactUs.module.css';
 
-const Contact = () => {
+const ContactUs = () => {
   return (
-    <section className={styles.contactUs} id="contact">
-    
+    <section className={styles.section}>
+      <div className={styles.sectionHeader}>
+        <div className={styles.container}>
+          <h2>Contact Us</h2>
+          <p>Got an idea for the perfect custom t-shirt? Reach out to us and let's bring your vision to life with a design that's uniquely yours!</p>
+        </div>
+      </div>
       <div className={styles.container}>
-        <div className={styles.title}>
-          Vibrant, Designer and <span className={styles.color}>Enigmatic</span>
-        </div>
-        <div className={styles.description2}>
-          We are Dreamy Designs, where every creation is more than just fashion—it's an ode to innovation, 
-          a celebration of our origins, and a stride toward a future brimming with endless possibilities. 
-          Each piece is meticulously crafted, uniquely tailored to reflect your individuality. 
-          If you're seeking something as rare and one-of-a-kind as you are, don't hesitate to reach out to us.
-        </div>
-        <FaHandPointDown className={styles.handIcon} /> {/* Use the FaHandPointDown icon */}
-        <div className={styles.description}>
-          <a href="mailto:Dream@gmail.com" className={`${styles.btn} ${styles.dark}`}>Email Us</a>
+        <div className={styles.row}>
+          <div className={styles.contactInfo}>
+            <div className={styles.contactInfoItem}>
+              <div className={styles.contactInfoIcon}>
+                <FaBuilding />
+              </div>
+              <div className={styles.contactInfoContent}>
+                <h4>Address</h4>
+                <p>4671 Sugar Camp Road,<br/> Pretoria, <br/>55060</p>
+              </div>
+            </div>
+            <div className={styles.contactInfoItem}>
+              <div className={styles.contactInfoIcon}>
+                <FaMobileAlt />
+              </div>
+              <div className={styles.contactInfoContent}>
+                <h4>Phone</h4>
+                <p>013-457-2321</p>
+              </div>
+            </div>
+            <div className={styles.contactInfoItem}>
+              <div className={styles.contactInfoIcon}>
+                <FaRegEnvelope />
+              </div>
+              <div className={styles.contactInfoContent}>
+                <h4>Email</h4>
+                <p><a href="mailto:DreamStudio@gmail.com">DreamStudio@gmail.com</a></p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
   );
-}
+};
 
-export default Contact;
+export default ContactUs;
