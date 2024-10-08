@@ -1,8 +1,8 @@
 import React from 'react';
 import { FaBuilding, FaMobileAlt, FaRegEnvelope } from 'react-icons/fa';
-import styles from './ContactUs.module.css';
+import styles from '../styles/contact.module.css';
 
-const ContactUs = () => {
+const Contact = () => {
   return (
     <section className={styles.section}>
       <div className={styles.sectionHeader}>
@@ -48,4 +48,4 @@ const ContactUs = () => {
   );
 };
 
-export default ContactUs;
+export default Contact;

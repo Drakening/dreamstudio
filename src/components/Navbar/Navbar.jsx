@@ -18,36 +18,25 @@ const Navbar = () => {
         <div className="menu-icon" onClick={handleShowNavbar}>
           <Hamburger />
         </div>
-        <div className={`nav-elements ${showNavbar && "active"}`}>
+        <div className={`nav-elements ${showNavbar ? "active" : ""}`}>
           <ul>
-            <li>
-              <Link to="home" smooth={true} duration={500}>
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link to="about" smooth={true} duration={500}>
-                About Us
-              </Link>
-            </li>
-            <li>
-              <Link to="services" smooth={true} duration={500}>
-                Services
-              </Link>
-            </li>
-            <li>
-              <Link to="pricing" smooth={true} duration={500}>
-                Pricing
-              </Link>
-            </li>
-            <Link className="ContactLink" to="contact" smooth={true} duration={500}>
-              Contact
-          </Link>
+            {["home", "about", "services", "pricing", "contact"].map((item) => (
+              <li key={item}>
+                <Link
+                  to={item}
+                  smooth={true}
+                  duration={500}
+                  onClick={() => setShowNavbar(false)}
+                >
+                  {item === "about" ? "About Us" : item.charAt(0).toUpperCase() + item.slice(1)}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
         <div className="ContactBtn">
           <Link to="contact" smooth={true} duration={500}>
-              Contact
+            Contact
           </Link>
         </div>
       </div>
@@ -101,7 +90,3 @@ const Logo = () => (
 );
 
 export default Navbar;
-
-
-
-
