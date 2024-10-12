@@ -1,6 +1,6 @@
-# Dream
+# Dreem
 
-Dream is a business that creates high quality, custom made, hand painted designs on any clothing apparel of your choosing.
+Dreem is a business that creates high quality, custom made, hand painted designs on any clothing apparel of your choosing.
 
 ## Live website
 
