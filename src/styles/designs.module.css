@@ -52,11 +52,11 @@
 }
 
 .gridImg img {
-    margin-top: 1rem;
-    height: 330px;
+  margin-top: 1rem;
+  height: 330px;
+  width: 280px;
 }
 
-/* Add this CSS to your existing styles */
 .eyeIcon {
   position: absolute;
     bottom: 0;
@@ -94,7 +94,6 @@
     color: #666;
 }
 
-/* Add this CSS to your existing styles or create a new CSS file */
 
 .modalOverlay {
     position: fixed;
@@ -123,11 +122,11 @@
   }
   
   .modalImage {
-    max-width: none;
+    max-width: 100%;
     max-height: 100vh;
     display: block;
     margin: auto;
-    cursor: pointer; /* Add this line to change cursor to pointer */
+    cursor: pointer; 
   }
   
   .closeButton {
@@ -139,7 +138,7 @@
     font-weight: bolder;
     color: #fff;
     background-color: #000;
-    padding: 4px;
+    padding: 6px;
     border-radius: 4px;
   }
   

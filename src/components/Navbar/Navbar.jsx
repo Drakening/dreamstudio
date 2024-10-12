@@ -20,7 +20,7 @@ const Navbar = () => {
         </div>
         <div className={`nav-elements ${showNavbar ? "active" : ""}`}>
           <ul>
-            {["home", "about", "services", "pricing", "contact"].map((item) => (
+            {["home", "about", "services", "pricing"].map((item) => (
               <li key={item}>
                 <Link
                   to={item}

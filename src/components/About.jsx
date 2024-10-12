@@ -1,7 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faFacebook, faTiktok } from '@fortawesome/free-brands-svg-icons';
-import ScrollAnimation from './ui/ScrollAnimation'
 import styles from '../styles/about.module.css';
 import aboutImg from '../assets/images/about.webp';
 

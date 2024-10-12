@@ -4,12 +4,13 @@
   box-sizing: border-box;
 }
 
-/*Basic styling*/
 body {
   margin: 0;
   font-family: Roboto,sans-serif;
   color: #444;
   background-color: #fff;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 

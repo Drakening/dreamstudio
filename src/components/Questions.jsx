@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from '../styles/questions.module.css';
-import ScrollAnimation from './ui/ScrollAnimation'
+import ScrollAnimation from './ui/ScrollAnimation';
 
 const Questions = () => {
   const [openIndex, setOpenIndex] = useState(null);

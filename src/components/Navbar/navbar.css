@@ -72,27 +72,6 @@
     width: 150px;
 }
 
-.nav-elements ul a::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 10px;
-  bottom: 0;
-  left: -5px;
-  border-radius: 5px;
-  background-color: #009ddc;
-  opacity: 0;
-  z-index: -1;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-.nav-elements ul a:hover::after {
-  width: 100%;
-  opacity: 0.7;
-  -webkit-transform: perspective(5px) rotateX(5deg);
-          transform: perspective(5px) rotateX(5deg);
-}
 
 .ContactLink {
   display: none;
@@ -180,28 +159,23 @@
 
   .nav-elements.active ul li {
     opacity: 1;
-    transform: translateY(0);
+        transform: translateY(0);
+        width: 250px;
+        height: 60px;
   }
 
   .nav-elements ul a {
-    font-size: 1.5rem;
-    color: #04091e;
-    position: relative;
-    padding: 5px 0;
+    font-size: 3rem;
+        font-weight: 800;
+        color: #04091e;
+        position: relative;
+        padding: 5px 0;
+        width: 100%;
   }
+}
 
-  .nav-elements ul a::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: #009ddc;
-    transition: width 0.3s ease-in-out;
-  }
-
-  .nav-elements ul a:hover::after {
-    width: 100%;
+@media (max-width: 350px) {
+  .nav-elements ul a {
+    font-size: 2rem;
   }
 }
