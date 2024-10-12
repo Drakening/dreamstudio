@@ -12,7 +12,7 @@ const Contact = () => {
         <div className={styles.container}>
           <p>Got an idea for the perfect custom t-shirt? Reach out to us and let's bring your vision to life with a design that's uniquely yours!</p>
           <a href="mailto:dreamstudio@gmail.com">
-              <button>Contact Us</button>
+              <button className={styles.contact}>Contact Us</button>
           </a>
         </div>
 
