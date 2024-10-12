@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from '../styles/hero.module.css';
-import HeroPic from '../assets/images/custom-t.jpg';
+import HeroPic from '../assets/images/custom-t.webp';
 import { motion } from 'framer-motion';
 
 const Hero = () => {
