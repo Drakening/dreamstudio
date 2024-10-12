@@ -11,7 +11,9 @@ const Contact = () => {
         </ScrollAnimation>
         <div className={styles.container}>
           <p>Got an idea for the perfect custom t-shirt? Reach out to us and let's bring your vision to life with a design that's uniquely yours!</p>
-          <button className={styles.contact}>Email Us</button>
+          <a href="mailto:dreamstudio@gmail.com">
+              <button>Contact Us</button>
+          </a>
         </div>
 
       </div>
