@@ -23,7 +23,7 @@ const About = () => {
           <div className={`${styles.allText} ${styles.aboveText}`}>
           
             <p className={`${styles.textBlk} ${styles.subHeadingText}`}>
-              At Dream, we're all about helping you express yourself!
+              At Dreem, we're all about helping you express yourself!
             </p>
           
             <p className={`${styles.textBlk} ${styles.description}`}>
