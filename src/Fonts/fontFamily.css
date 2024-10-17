@@ -56,3 +56,9 @@
   font-style: normal;
 }
 
+
+
+@font-face {
+    font-family: 'Antonio';
+    src: url('./fonts/Antonio.ttf') format('truetype');
+  }
