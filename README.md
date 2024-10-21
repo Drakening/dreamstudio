@@ -4,6 +4,17 @@ Dreem is a business that creates high quality, custom made, hand painted designs
 
 ## Live website
 
-[Insert gif or link to demo](https://dreem.netlify.app/)
+[Live site](https://dreem.netlify.app/)
+
+## Build With
+
+### Frontend
+
+- React
+- framer-motion
+- react-icons
+- react-router-dom
+- react-scripts
+- react-scroll
 
 ![Dream designs](https://github.com/user-attachments/assets/70500e03-eaa0-4600-bf59-1c972a27efeb)
